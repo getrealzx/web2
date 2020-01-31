@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center of Image</title>
+
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        .parent{
+            display: flex;
+            position: fixed;
+            width:100vw;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            z-index: 20;
+        }
+        .modal-dialog{
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            background-color:gray;
+        }
+
+        .modal-title{
+        
+            padding: 20px;
+            font-size: 26px;
+            color: white;
+            width: 100%;
+
+        }
+
+        .modal-content{
+            position: abosolute;
+            background-color: #fff;
+            width:280px;
+
+
+        }
+        p{
+            padding: 18px;
+        }
+
+        .border{
+            border: 2px black solid;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px black;
+        
+        }
+        .modal-buttons{
+            display:flex;
+            
+            width:100%;
+            height: 20px;
+            padding-top: 2px;
+            padding-bottom: 1px;
+            background-color: gray;
+            align-content: flex-end;
+            border-radius: 10px;
+
+
+
+        }
+        button{
+            position: relative;
+            left:187px;
+
+        }
+
+        iframe{
+            position: absolute;
+            top:0px;
+            width:100%;
+            height: 1000px;
+            z-index: 10;
+            opacity: .2;
+            
+
+        
+        }
+
+        
+    
+    
+    </style>
+</head>
+
+
+<body>
+    <div class="parent">
+        
+        <div class="modal-dialog border">
+            <div class="modal-header">
+                <label class="modal-title">Hello</label>
+            </div>
+            <div class="modal-content">
+                <p>Would you like to subscribe to our email newsletter?</p> 
+            </div>
+            <div class="modal-buttons">
+                <button>Ok</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+    
+    </div>
+    <iframe src="https://dc-htx-veronica.netlify.com/lessons/week3/thursday/#medium" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+
+</body>
+</html>

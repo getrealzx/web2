@@ -1,0 +1,152 @@
+<!-- center content not starting right -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Responsive website layout
+    </title>
+
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+        }
+
+        
+        .nav{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 60px;
+            background-color:aqua;
+            align-items:flex-start;
+            width:100%;
+            position: fixed;
+            top:0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            width: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+
+
+        }
+
+        .lbar{
+            min-height: 100vh;
+            width:20vw;
+
+            padding:10px;
+            padding-top: 70px;
+            align-content: flex-start;
+            font-size: 11px;
+
+
+        }
+        .rbar{
+            min-height: 100vh;
+            width:20vw;
+
+            padding:10px;
+            align-content: flex-end;
+            padding-top: 70px;
+            font-size: 11px;
+        }
+        .centermain{
+            font-size: 12px;
+            padding: 10px;
+            padding-top: 70px;
+            width:100%;
+
+            padding-top: 80px;
+            border:1px black solid;
+            
+        }
+
+    
+
+        .ltab{
+
+            display: flex;
+            justify-content: space-around 10px;
+            padding:20px;
+            align-items: center;
+        }
+
+        .space{
+
+            flex-grow: 10;
+
+        }
+        .rtab{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+
+        a{
+            display: block;
+            padding: 20px;
+            border: 1px;
+
+        }
+
+        a:link{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            text-decoration: none;
+
+        }
+        a:hover{
+
+            text-decoration: underline;
+        }
+
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="ltab">Company Name</div>
+        <div class="space"></div>
+        <div class="rtab">
+            <a href="#" class="r_items">Home</a>
+            <a href="#" class="r_items">Products</a>
+            <a href="#" class="r_items">About</a>
+            <a href="#" class="r_items">Careers</a>
+            <a href="#" class="r_items">Contacts</a>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="lbar"><h3>Left Bar</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, voluptate! Odit suscipit cupiditate consequatur, exercitationem dolor fuga accusamus explicabo est? Omnis, quasi facere. Sed obcaecati dolorem aliquam fugiat, unde earum laboriosam itaque eveniet natus, deleniti a neque nulla perspiciatis amet.</div>
+        <div class="centermain"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam in similique laborum natus debitis dignissimos quae asperiores magni temporibus odio recusandae veritatis quas dicta consectetur excepturi, facere pariatur quasi! Natus.
+        Eaque, aperiam earum. Magni rem, dolor, sit, consequuntur doloremque tempora dicta totam suscipit quisquam praesentium libero sapiente esse aut sunt illo! Nesciunt quos voluptatum amet qui voluptatem provident et nostrum.
+        Odit non aliquam vitae molestias accusantium nihil tempore incidunt perspiciatis, atque quaerat autem laborum cumque sunt temporibus neque maxime illum sint possimus dolorem id consequatur ipsa quis blanditiis consequuntur! Eveniet.
+        Quibusdam, ipsam asperiores ducimus dolorum odio molestias soluta vitae possimus rerum magni quidem dolor deleniti quae. Minus veritatis vel officia rerum esse recusandae. Modi, ducimus nam pariatur consectetur nesciunt vitae.
+        Expedita corporis illum voluptas accusamus iusto, itaque perferendis error exercitationem beatae eligendi, iure atque dignissimos aperiam impedit est odit dicta. Fugiat, voluptas repellendus blanditiis possimus facilis animi ipsum earum quaerat.</p></div>
+        <div class="rbar"><h3>Right Bar</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet a unde blanditiis modi, nisi rem soluta rerum debitis quisquam.</div>
+    </div>
+
+    
+</body>
+</html>
