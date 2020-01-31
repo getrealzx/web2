@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moosaic</title>
+
+
+    <style>
+        div{
+            border: 2px black solid; 
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .flexContainerRow{
+            display: flex;
+            flex-direction: row;
+            height:100%;
+            align-items:stretch;
+        }
+        .flexContainerColumn{
+            display: flex;
+            flex-direction: column;
+            height:100%; 
+
+            /* check here */
+            align-items:stretch;
+
+        }
+        .red{
+            background-color: red;
+        }
+        .white{
+            background-color: white;
+        }
+        .black{
+            background-color: black;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .flex1{
+            flex:1;
+        }
+        .flex2{
+            flex:2;
+        }
+        .flex3{
+            flex:3;
+        }
+        .flex4{
+            flex:4;
+        }
+        .flex5{
+            flex:5;
+        }
+        .flex8{
+            flex:8;
+        }
+        .flex9{
+            flex:9;
+        }
+
+        .nonborderL{
+            border:1px 1px 1px 0px;
+        }
+        .nonborderR{
+            border:1px 0px 1px 1px;
+        }
+        .nonborder{
+            border:none;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="flex1 red flexContainerColumn">
+            <div class="flex1 white flexContainerRow">
+                <div class="flex2"></div>
+                <div class="flex3"> </div>
+            </div>
+            <div class="flex9 flexContainerRow nonborder">
+                <div class="flex1 white flexContainerColumn nonborder">
+                    <div class="flex2"></div>
+                    <div class="flex3"></div>
+                    <div class="flex3 yellow"></div>
+                    <div class="flex1 nonborder"></div>
+                </div>
+                <div class="flex4 red flexContainerColumn nonborder">
+                    <div class="flex4 nonborder"></div>
+                    <div class="flex2 black flexContainerRow nonborderL">
+                        <div class="flex1"></div>
+                        <div class="flex1 white flexContainerColumn">
+                            <div class="flex1"></div>
+                            <div class="flex1"></div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="flex3 flexContainerRow nonborder">
+                        <div class="flex1 flexContainerColumn nonborder">
+                            <div class="flex2 white"></div>
+                            <div class="flex1 white nonborder"></div>
+
+
+                        </div>
+                        <div class="flex1 black flexContainerColumn">
+                            <div class="flex1"></div>
+                            <div class="flex2 flexContainerRow yellow">
+                                <div class="flex1"></div>
+                                <div class="flex1 white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="flex1 black flexContainerRow">
+
+
+            <div class="flexContainerColumn flex1 blue">
+            <div class="flex1 flexContainerColumn yellow">
+                <div class="flex1 yellow "></div>
+                <div class="flex2 yellow "></div>
+                <div class="flexContainerRow flex2 white">
+                    <div class=" flex1 "></div>
+                    <div class=" flex1 "></div>
+                </div>
+            </div>
+
+            <div class="flex1 flexContainerColumn blue">
+                <div class="flex1 white"></div>
+                <div class="flex2 blue"></div>
+                <div class="flex2 red"></div>
+            </div>
+
+
+            </div>
+
+            <div class="flexContainerColumn flex1 green">
+                <div class="flex2 blue"></div>
+                <div class="flex2 red"></div>
+                <div class="flex1 white "></div>   
+                
+                <div class="flex2 white flexContainerRow">
+                    <div class="flex1"></div>
+                    <div class="flex1"></div>
+                </div>
+                <div class="flex2 yellow"></div>
+                <div class="flex1 white flexContainerRow">
+                    <div class="flex1"></div>
+                    <div class="flex1 black"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="flex1 yellow flexContainerColumn">
+            <div class="flex1 yellow flexContainerRow">
+                <div class="flex1 yellow"></div>
+                <div class="flex1 black"></div>
+                <div class="flex3 white"></div>
+            </div>
+
+            <div class="flex8 yellow flexContainerRow">
+                <div class="flex4 flexContainerColumn blue">
+                    <div class="flex4 white flexContainerRow">
+                        <div class="flex1 flexContainerColumn">
+                            <div class="flex1 yellow"></div>
+                            <div class="flex1 black"></div>
+                            <div class="flex1 white"></div>
+                            <div class="flex1 white"></div>
+                        </div>
+                        <div class="flex1 black flexContainerColumn">
+                            <div class="flex1 white"></div>
+                            <div class="flex1"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex4 blue"></div>
+
+
+                </div>
+                <div class="flex1 white flexContainerColumn">
+                    <div class="flex3 yellow"></div>
+                    <div class="flex3"></div>
+                    <div class="flex2"></div>
+                </div>
+
+            </div>
+
+            <div class="flex1 white"></div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
